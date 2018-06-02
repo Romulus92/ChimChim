@@ -1,0 +1,178 @@
+//Fixed header
+
+.header {
+  display: flex;
+  height: 97px;
+  box-shadow: 0px 24px 45px -10px rgba(0,0,0,0.5);
+  background: rgba(#454a53 ,0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.logo {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__img {
+    width: 84px;
+    height: 84px;
+  }
+}
+
+.nav {
+  display: flex; 
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+    border-right: 1px solid rgba(255,255,255,0.5);
+    position: relative;
+    &-text {
+      position: relative;
+      z-index: 2;
+    }
+    &_bg {
+      position: absolute;
+      background: rgba(255,255,255,0);
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+    &:first-of-type {
+      border-left: 1px solid rgba(255,255,255,0.5);
+    }
+    &_korean {
+      /* &:hover {
+        background: url(../images/menu_hovers/k_a.jpg);
+      } */
+    }
+    &_hotasia {
+      /* &:hover {
+        background: url(../images/menu_hovers/h_a.jpg);
+      } */
+    }
+    &_prof {
+      /* &:hover {
+        background: url(../images/menu_hovers/p_a.jpg);
+      } */
+    }
+  }
+}
+
+.social {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* transition: border 0.3s ease-in-out; */
+    border: none;
+    /* margin-right: 22px; */
+    &_active {
+      .social__circle {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &__circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    border: 1px solid white;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  &__picture {
+    display: block;
+    width: 21px;
+    height: 21px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    fill: white;
+  }
+}
+
+//hero section
+
+.hero {
+  position: relative;
+  &_bg {
+    /* background: url(../images/header_bg/korean.jpg); */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.3s ease-in-out;  
+  }
+}
+
+.product {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  &-slider {
+    margin-bottom: 115px;
+    &__info {
+      color: white;
+      padding-top: 50px;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      padding-right: 180px;
+    }
+    &__logo {
+      height: 235px;
+      width: 235px;
+      margin-right: 60px;
+    }
+    &__heading {
+      font-size: 50px;
+      line-height: 60px;
+      margin: 0;
+    }
+    &__text {
+      max-width: 410px;
+    }
+  }
+  &__progress {
+    display: flex;
+    margin-bottom: 35px;
+    justify-content: center;
+    &-item {
+      background: white;
+      width: 97px;
+      height: 3px;
+      margin-right: 4px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

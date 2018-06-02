@@ -16,6 +16,9 @@ const webpackConfig = require('./webpack.config.js'); */
 
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
+const imageminMozjpeg = require('imagemin-mozjpeg')
+const imageminGifsicle = require('imagemin-gifsicle')
+const imageminOptipng = require('imagemin-optipng')
 const cache = require('gulp-cache');
 
 const spritesmith = require('gulp.spritesmith');
@@ -104,12 +107,18 @@ function server() {
 // ужимаем и переносим картинки
 function images() {
     return gulp.src(paths.images.src)
-        .pipe(cache(imagemin({
-            interlaced: true,
-            progressive: true,
-            svgoPlugins: [{ removeViewBox: false }],
-            use: [pngquant()]
-        })))
+        .pipe(imagemin([
+          imageminMozjpeg({
+              quality: 100
+          }),
+          imageminGifsicle({
+              optimizationLevel: 3,
+              interlaced: true
+          }),
+          imageminOptipng({
+              optimizationLevel: 1,
+          }),
+        ]))
         .pipe(gulp.dest(paths.images.dest));
 }
 

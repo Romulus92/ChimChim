@@ -1,0 +1,16 @@
+// resolutions
+$netbooks: 1024px;
+$tablets: 768px;
+$phones: 480px;
+//vendors
+@import "vendor/_slick";
+// media
+@import "layout/_media";
+// config
+@import "config/_variables";
+@import "config/_mixins";
+// base
+@import "layout/_fonts";
+@import "layout/_base";
+//section
+@import "section/header";

@@ -1,1 +1,82 @@
-h1 Test
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet" type="text/css" href="assets/styles/main.min.css")
+  body
+    header.header
+      .container.container__header
+        .main-menu
+          .logo
+            img.logo__img(src='assets/images/logo_chimchim.svg')
+          .nav
+            a.nav__item.nav__item_korean
+              span.nav__item-text Сделано корейцами
+              .nav__item_bg
+            a.nav__item.nav__item_hotasia
+              span.nav__item-text Hotasia
+              .nav__item_bg
+            a.nav__item.nav__item_prof 
+              span.nav__item-text Proffesional
+              .nav__item_bg
+            a.nav__item 
+              span.nav__item-text Где купить?
+              .nav__item_bg
+        .social
+          a.social__item
+            .social__circle
+            .social__picture
+              svg.social__img
+                use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#icon_ig")
+          a.social__item
+            .social__circle
+            .social__picture
+              svg.social__img
+                use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#icon_vk")
+          a.social__item
+            .social__circle
+            .social__picture
+              svg.social__img
+                use(xlink:href="assets/svg/symbol/svg/sprite.symbol.svg#icon_youtube")
+    section.section.hero
+      .hero_bg(style="background: url(assets/images/header_bg/professional.jpg) center center no-repeat;")
+      .product
+        .container
+          ul.product-slider
+            li.product-slider__item
+              .product-slider__logo
+                img.product-slider__logo-img(src='assets/images/professional.svg')
+              .product-slider__info
+                h1.product-slider__heading 
+                  | Чим-Чим: <br />
+                  | Professional
+                p.product-slider__text 
+                  | Мы собрали для вас ингридиенты лучшего качества с которыми азиатские блюда получаются легко!
+            li.product-slider__item
+              .product-slider__logo
+                img.product-slider__logo-img(src='assets/images/chim-chim_hotasia.svg')
+              .product-slider__info
+                h1.product-slider__heading 
+                  | Чим-Чим: <br />
+                  | HOTASIA
+                p.product-slider__text 
+                  | Яркая и таинственная азиатская кухня теперь ближе, чем когда-либо! Следуйте простому рецепту на упаковке и у вас обязательно всё получится!
+            li.product-slider__item
+              .product-slider__logo
+                img.product-slider__logo-img(src='assets/images/chim-chim_korean.svg')
+              .product-slider__info
+                h1.product-slider__heading 
+                  | Чим-Чим: <br />
+                  | Сделано корейцами
+                p.product-slider__text 
+                  | С заправками от ЧИМ-ЧИМ готовить популярные корейские салаты стало легко и приятно!
+          .product__progress
+            .product__progress-item
+            .product__progress-item
+            .product__progress-item
+    script(src="assets/scripts/_jquery-3.3.1.js")
+    script(src="assets/scripts/_slick.min.js")  
+    script(src="assets/scripts/main.js")
