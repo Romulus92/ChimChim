@@ -1,0 +1,90 @@
+// ready section
+
+.ready {
+  background: white;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__heading {
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 115px;
+    div {
+      background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      position: absolute;
+      width: 100%;
+      font-size: 34px;
+      line-height: 60px;
+      @include proxima(black);
+    }
+    &:after {
+      content: "Готовые решения на Вашей кухне";
+      font-size: 34px;
+      line-height: 60px;
+      text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+      color: transparent;
+      @include proxima(black);
+    }
+  }
+  &__lead {
+    color: #7a7a7a;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__item {
+    display: inline-block;
+    position: relative;
+    &_1 {
+      width: 286px;
+    }
+    &_2 {
+      width: 615px;
+    }
+    &_3 {
+      width: 860px;
+      margin: 0 auto;
+    }
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    &_1 {
+      right: -171px;
+      bottom: 143px;
+    }
+    &_2 {
+      top: 164px;
+      right: -48px;
+    }
+    &_3 {
+      top: 171px;
+      right: 0;
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+  &__line {
+    position: absolute;
+    &_1 {
+      width: 333px;
+      right: -311px;
+      top: 302px;
+    }
+    &_2 {
+      width: 148px;
+      left: 92px;
+      bottom: -197px;
+    }
+  }
+}
