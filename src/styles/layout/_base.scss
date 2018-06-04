@@ -57,6 +57,9 @@ a {
     flex-direction: row;
     justify-content: space-between;
   }
+  &__advantages {
+    overflow: visible;
+  }
 }
 
 .section {

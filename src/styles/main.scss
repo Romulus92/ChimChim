@@ -4,6 +4,7 @@ $tablets: 768px;
 $phones: 480px;
 //vendors
 @import "vendor/_slick";
+@import "vendor/_animate";
 // media
 @import "layout/_media";
 // config
@@ -15,3 +16,4 @@ $phones: 480px;
 //section
 @import "section/header";
 @import "section/ready";
+@import "section/advantages";

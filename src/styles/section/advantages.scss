@@ -1,0 +1,110 @@
+.advantages {
+  background: white;
+  &__heading_1 {
+    position: relative;
+    max-width: 720px;
+    margin: 0;
+    div {
+      background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      position: absolute;
+      width: 100%;
+      font-size: 34px;
+      line-height: 60px;
+      @include proxima(black);
+    }
+    &:after {
+      content: "Вместе с ЧИМ-ЧИМ –";
+      font-size: 34px;
+      line-height: 60px;
+      text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+      color: transparent;
+      @include proxima(black);
+    }
+  }
+  &__heading_2 {
+    position: relative;
+    margin: 0;
+    max-width: 720px;
+    margin-bottom: 55px;
+    div {
+      background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      position: absolute;
+      width: 100%;
+      font-size: 34px;
+      line-height: 60px;
+      @include proxima(black);
+    }
+    &:after {
+      content: "готовить одно удовольствие!";
+      font-size: 34px;
+      line-height: 60px;
+      text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+      color: transparent;
+      @include proxima(black);
+    }
+  }
+  &__content {
+    display: flex;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    padding-top: 55px;
+    &-header {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 140px;
+    }
+    &-image {
+      width: 600px;
+      height: 166px;
+      margin: 0 auto;
+    }
+    &-lead {
+      font-size: 20px;
+      line-height: 33px;
+      position: absolute;
+      left: 166px;
+      bottom: -25px;
+      color: #898989;
+    }
+  }
+  &__list {
+    display: flex;
+  }
+  &__picture {
+    width: 32%;
+    position: relative;
+    overflow: visible;
+  }
+  &__image {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 220px;
+    &-heading {
+      font-size: 20px;
+      line-height: 28px;
+      color: #d91c29;
+    }
+    &-text {
+      color: #898989;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }  
+}

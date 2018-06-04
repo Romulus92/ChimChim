@@ -2,6 +2,7 @@
 
 .ready {
   background: white;
+  margin-bottom: 110px;
   &__content {
     display: flex;
     flex-wrap: wrap;
@@ -43,6 +44,9 @@
   &__item {
     display: inline-block;
     position: relative;
+    &_info {
+      opacity: 0;
+    }
     &_1 {
       width: 286px;
     }
@@ -52,6 +56,7 @@
     &_3 {
       width: 860px;
       margin: 0 auto;
+      opacity: 0;
     }
   }
   &__text {
@@ -76,6 +81,7 @@
   }
   &__line {
     position: absolute;
+    opacity: 0;
     &_1 {
       width: 333px;
       right: -311px;

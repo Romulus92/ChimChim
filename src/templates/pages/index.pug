@@ -80,23 +80,49 @@ html(lang="en")
               .product__progress-bar
             a.product__progress-item.product__progress-item-3
               .product__progress-bar
-    section.section.ready
+    section.ready
       .container
         h2.ready__heading 
           div Готовые решения на Вашей кухне
         span.ready__lead Свыше 20 вкусных дополнений к вашему столу
         .ready__content
           .ready__item.ready__item_1
-            img.ready__image(src='assets/images/vegies-tai.png')
-            .ready__text.ready__text_1 Удобные упаковки <br /> с подробной <br /> инструкцией
-            img.ready__line.ready__line_1(src='assets/images/lines1.svg')
+            .ready__item_info.ready__item_info_1.ready__animated.animated
+              img.ready__image(src='assets/images/vegies-tai.png')
+              .ready__text.ready__text_1 Удобные упаковки <br /> с подробной <br /> инструкцией
+            img.ready__line.ready__line_1.ready__animated.animated(src='assets/images/lines1.svg')
           .ready__item.ready__item_2
-            img.ready__image(src='assets/images/pan.png')
-            .ready__text.ready__text_2 Время приготовления — <br /> до 30 минут
-            img.ready__line.ready__line_2(src='assets/images/lines2.svg')
-          .ready__item.ready__item_3
+            .ready__item_info.ready__animated.animated
+              img.ready__image(src='assets/images/pan.png')
+              .ready__text.ready__text_2 Время приготовления — <br /> до 30 минут
+            img.ready__line.ready__line_2.ready__animated.animated(src='assets/images/lines2.svg')
+          .ready__item.ready__item_3.ready__animated.animated
             img.ready__image(src='assets/images/plate.png')
             .ready__text.ready__text_3 Неповторимый вкус <br /> каждого блюда  
+    section.section.advantages
+      .container.container__advantages
+        h2.advantages__heading.advantages__heading_1
+          div Вместе с ЧИМ-ЧИМ –
+        h2.advantages__heading.advantages__heading_2
+          div готовить одно удовольствие!
+        .advantages__content
+          .advantages__picture
+            img.advantages__image.animated(src="assets/images/advantages_wok.png")
+          .advantages__info
+            .advantages__info-header
+              img.advantages__info-image(src="assets/images/100.png")
+              span.advantages__info-lead аппетитный результат
+            ul.advantages__list
+              li.advantages__item
+                h3.advantages__item-heading Понятный рецепт
+                p.advantages__item-text Теперь любой человек сможет приготовить вкусное и сочное азиатское блюдо. Мы разработали пошаговый рецепт и поместили его на упаковку. Следуйте ему, и у Вас всё обязательно получится!
+              li.advantages__item
+                h3.advantages__item-heading Идеальная основа 
+                p.advantages__item-text Линейка ЧИМ-ЧИМ, получила одобрение профессиональных шеф-поваров. Специально отобранные растительные ингредиенты стали основой для лапши, соусов и заправок. 
+              li.advantages__item
+                h3.advantages__item-heading Великолепный вкус
+                p.advantages__item-text Все заправки и соусы ЧИМ-ЧИМ идеально сбалансированы по составу. Ароматные сочетания специй и трав наполняют каждое блюдо азиатской пикантностью. Яркий и насыщенный вкус увлекает в гастрономическое путешествие и оставляет приятное послевкусие.  
     script(src="assets/scripts/_jquery-3.3.1.js")
-    script(src="assets/scripts/_slick.min.js")  
+    script(src="assets/scripts/_slick.min.js")
+    script(src="assets/scripts/_jquery.waypoints.js") 
     script(src="assets/scripts/main.js")

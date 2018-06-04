@@ -134,7 +134,25 @@ var func = {
       $(this).removeClass("social__item_active")
     })
   },
-  
+  "readyAnimate": function() {
+    $(".ready__item_info_1").waypoint(function() {
+      let aminatedItems = $(".ready__animated");
+      let animatedArray = Array.from(aminatedItems);
+      var i = 0;
+      function delayedLoop(){
+      $(animatedArray[i]).addClass("fadeInDown")
+      if(++i == animatedArray.length)
+      { return; }
+      window.setTimeout(delayedLoop, 500);
+      }
+      delayedLoop();
+    } , { offset: '60%'});
+  },
+  "advantagesAnimate": function() {
+    $(".advantages__image").waypoint(function() {
+      $(".advantages__image").addClass("fadeInLeft")
+    } , { offset: '50%'});
+  }
 }
 
 var app = {
@@ -142,6 +160,8 @@ var app = {
     func.slick();
     func.headerHover();
     func.socialHover();
+    func.readyAnimate();
+    func.advantagesAnimate();
   },
   'scroll': function() {
     
