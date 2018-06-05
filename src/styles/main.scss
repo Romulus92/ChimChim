@@ -5,6 +5,7 @@ $phones: 480px;
 //vendors
 @import "vendor/_slick";
 @import "vendor/_animate";
+@import "vendor/_swiper";
 // media
 @import "layout/_media";
 // config
@@ -17,3 +18,4 @@ $phones: 480px;
 @import "section/header";
 @import "section/ready";
 @import "section/advantages";
+@import "section/slider";

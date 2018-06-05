@@ -152,6 +152,80 @@ var func = {
     $(".advantages__image").waypoint(function() {
       $(".advantages__image").addClass("fadeInLeft")
     } , { offset: '50%'});
+  },
+  "sliderMenuHover": function() {
+    /* $(".slider__menu-item").hover(function() {
+      if ($(this).hasClass("slider__menu-item_korean")) {
+        $(this).find(".slider__menu-item-bg").css("background",  "url(assets/images/menu_hovers/pk_a.jpg)").animate({opacity: 1},{duration:300});
+      } else if ($(this).hasClass("slider__menu-item_hotasia")) {
+        $(this).find(".slider__menu-item-bg").css("background",  "url(assets/images/menu_hovers/ph_a.jpg)").animate({opacity: 1},{duration:300});
+      } else if ($(this).hasClass("slider__menu-item_prof")) {
+        $(this).find(".slider__menu-item-bg").css("background",  "url(assets/images/menu_hovers/pp_a.jpg)").animate({opacity: 1},{duration:300});
+      }
+    }) */
+    /* $(".slider__menu-item").mouseleave(function() {
+      if ($(this).hasClass("slider__menu-item_korean")) {
+        $(this).find(".slider__menu-item-bg").stop().animate({opacity: 0},{duration:300});
+      } else if ($(this).hasClass("slider__menu-item_hotasia")) {
+        $(this).find(".slider__menu-item-bg").stop().animate({opacity: 0},{duration:300});
+      } else if ($(this).hasClass("slider__menu-item_prof")) {
+        $(this).find(".slider__menu-item-bg").stop().animate({opacity: 0},{duration:300});
+      }
+    }) */
+  },
+  "sliderMenuClick": function() {
+    $(".slider__menu-item").click(function() {
+      if ($(this).hasClass("slider__menu-item_korean")) {
+        $(".slider__menu-item_korean").addClass("slider__menu-item_korean-active")
+        $(".slider__menu-item_hotasia").removeClass("slider__menu-item_hotasia-active")
+        $(".slider__menu-item_prof").removeClass("slider__menu-item_prof-active")
+        /* $(".slider__menu-item_korean").find(".slider__menu-item-bg").css("background",  "url(assets/images/menu_hovers/pk_a.jpg)").animate({opacity: 1},{duration:300});
+        $(".slider__menu-item_hotasia").find(".slider__menu-item-bg").css("background",  "none")
+        $(".slider__menu-item_prof").find(".slider__menu-item-bg").css("background",  "none") */
+      } else if ($(this).hasClass("slider__menu-item_hotasia")) {
+        $(".slider__menu-item_korean").removeClass("slider__menu-item_korean-active")
+        $(".slider__menu-item_hotasia").addClass("slider__menu-item_hotasia-active")
+        $(".slider__menu-item_prof").removeClass("slider__menu-item_prof-active")
+        /* $(".slider__menu-item_hotasia").find(".slider__menu-item-bg").css("background",  "url(assets/images/menu_hovers/ph_a.jpg)").animate({opacity: 1},{duration:300});
+        $(".slider__menu-item_korean").find(".slider__menu-item-bg").css("background",  "none")
+        $(".slider__menu-item_prof").find(".slider__menu-item-bg").css("background",  "none") */
+      } else if ($(this).hasClass("slider__menu-item_prof")) {
+        $(".slider__menu-item_korean").removeClass("slider__menu-item_korean-active")
+        $(".slider__menu-item_hotasia").removeClass("slider__menu-item_hotasia-active")
+        $(".slider__menu-item_prof").addClass("slider__menu-item_prof-active")
+        /* $(".slider__menu-item_prof").find(".slider__menu-item-bg").css("background",  "url(assets/images/menu_hovers/pp_a.jpg)").animate({opacity: 1},{duration:300});
+        $(".slider__menu-item_korean").find(".slider__menu-item-bg").css("background",  "none")
+        $(".slider__menu-item_hotasia").find(".slider__menu-item-bg").css("background",  "none") */
+      }
+    })
+  },
+  "swiperSlider": function() {
+    var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      /* loop: true, */
+      slidesPerView: 4,
+  
+      /* // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      }, */
+  
+      /* // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }, */
+  
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.slider__scroll',
+        /* snapOnRelease: true, */
+        /* dragClass: "slider__drag", */
+        /* draggable: true, */
+        dragSize: 30
+      },
+    })
   }
 }
 
@@ -162,6 +236,9 @@ var app = {
     func.socialHover();
     func.readyAnimate();
     func.advantagesAnimate();
+    func.sliderMenuHover();
+    func.sliderMenuClick();
+    func.swiperSlider();
   },
   'scroll': function() {
     

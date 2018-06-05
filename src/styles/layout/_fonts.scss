@@ -1,48 +1,48 @@
 @font-face {
   font-family: 'Circe ExtraBold';
-  src: url('../webfonts/Circe-ExtraBold.otf') format('otf');
+  src: url('../webfonts/Circe-ExtraBold.otf');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe Bold';
-  src: url('../webfonts/Circe-Bold.otf') format('otf');
+  src: url('../webfonts/Circe-Bold.otf');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe Regular';
-  src: url('../webfonts/Circe-Regular.otf') format('otf');
+  src: url('../webfonts/Circe-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe Light';
-  src: url('../webfonts/Circe-Light.otf') format('otf');
+  src: url('../webfonts/Circe-Light.otf');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Proxima';
-  src: url('../webfonts/Proxima Nova Black.otf') format('otf');
+  font-family: 'Proxima Black';
+  src: url('../webfonts/Proxima Nova Black.otf');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Proxima';
-  src: url('../webfonts/Proxima Nova Extrabold.otf') format('otf');
+  font-family: 'Proxima Extrabold';
+  src: url('../webfonts/Proxima Nova Extrabold.otf');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Proxima';
-  src: url('../webfonts/Proxima Nova Regular.otf') format('otf');
+  font-family: 'Proxima Regular';
+  src: url('../webfonts/Proxima Nova Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -67,17 +67,17 @@
 }
 
 @mixin proxima($style) {
-  font-family: 'Proxima', Helvetica, sans-serif;
+
   @if $style == regular {
-		font-weight: 400;
+		font-family: 'Proxima Regular', Helvetica, sans-serif;
 	}
 
 	@if $style == black {
-		font-weight: 900;
+		font-family: 'Proxima Black', Helvetica, sans-serif;
 	}
 
 	@if $style == extrabold {
-		font-weight: 800;
+		font-family: 'Proxima Extrabold', Helvetica, sans-serif;
 	}
 }
 

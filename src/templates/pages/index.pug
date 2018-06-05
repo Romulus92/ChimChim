@@ -121,8 +121,72 @@ html(lang="en")
                 p.advantages__item-text Линейка ЧИМ-ЧИМ, получила одобрение профессиональных шеф-поваров. Специально отобранные растительные ингредиенты стали основой для лапши, соусов и заправок. 
               li.advantages__item
                 h3.advantages__item-heading Великолепный вкус
-                p.advantages__item-text Все заправки и соусы ЧИМ-ЧИМ идеально сбалансированы по составу. Ароматные сочетания специй и трав наполняют каждое блюдо азиатской пикантностью. Яркий и насыщенный вкус увлекает в гастрономическое путешествие и оставляет приятное послевкусие.  
+                p.advantages__item-text Все заправки и соусы ЧИМ-ЧИМ идеально сбалансированы по составу. Ароматные сочетания специй и трав наполняют каждое блюдо азиатской пикантностью. Яркий и насыщенный вкус увлекает в гастрономическое путешествие и оставляет приятное послевкусие.
+    section.slider
+      .container.container__slider
+        .slider__menu
+          a.slider__menu-item.slider__menu-item_korean
+            span.slider__menu-item-text Сделано корейцами
+            .slider__menu-item-bg
+          a.slider__menu-item.slider__menu-item_hotasia.slider__menu-item_hotasia-active
+            span.slider__menu-item-text HOTASIA
+            .slider__menu-item-bg
+          a.slider__menu-item.slider__menu-item_prof
+            span.slider__menu-item-text Professional
+            .slider__menu-item-bg
+        .slider__item
+          .slider__item-lead
+            img.slider__item-lead-quote_left(src="assets/images/quote_left.png")
+            span.slider__item-lead-text Азиатские соусы для приготовления блюд паназиатской кухни сочетают в себе сразу 3 вкуса: острота, кислота и сладость. Чим-Чим представляет линейку готовых решений для самых популярных блюд из Азии.
+            img.slider__item-lead-quote_right(src="assets/images/quote_right.png")
+          .slider__item-content
+            .slider__item-header
+              h2.slider__item-heading.slider__item-heading1
+                div Пшеничная
+              h2.slider__item-heading.slider__item-heading2
+                div лапша
+              h2.slider__item-heading.slider__item-heading3
+                div со свининой
+              h2.slider__item-heading.slider__item-heading4
+                div Яки Удон
+              .slider__item-video
+                .slider__item-image
+                  img.slider__item-video-icon(src="assets/images/play.png")
+                .slider__item-video-text
+                  span Видеорецепт
+                  hr
+              .slider__item-recipe
+                .slider__item-image
+                  img.slider__item-recipe-icon(src="assets/images/recipe.png")
+                .slider__item-recipe-text
+                  span Описание рецепта
+                  hr
+            .slider__item-picture
+              img.slider__item-picture-image(src="assets/images/slider_item.png")
+        .slider__preview
+          .swiper-container
+            .swiper-wrapper
+              a.slider__preview-item.swiper-slide
+                img.slider__preview-item-image(src="assets/images/slider_preview/1.png")
+                span.slider__preview-item-text Набор Яки Соба
+              a.slider__preview-item.swiper-slide
+                img.slider__preview-item-image(src="assets/images/slider_preview/2.png")
+                span.slider__preview-item-text Набор Яки Удон
+              a.slider__preview-item.slider__preview-item_low.swiper-slide
+                img.slider__preview-item-image(src="assets/images/slider_preview/3.png")
+                span.slider__preview-item-text Набор Пад Тай
+              a.slider__preview-item.slider__preview-item_low.swiper-slide
+                img.slider__preview-item-image(src="assets/images/slider_preview/4.png")
+                span.slider__preview-item-text Соус для свинины в кисло-сладком соусе
+              a.slider__preview-item.slider__preview-item_low.swiper-slide
+                img.slider__preview-item-image(src="assets/images/slider_preview/3.png")
+                span.slider__preview-item-text Набор Пад Тай
+              a.slider__preview-item.slider__preview-item_low.swiper-slide
+                img.slider__preview-item-image(src="assets/images/slider_preview/4.png")
+                span.slider__preview-item-text Соус для свинины в кисло-сладком соусе
+            .slider__scroll
     script(src="assets/scripts/_jquery-3.3.1.js")
     script(src="assets/scripts/_slick.min.js")
     script(src="assets/scripts/_jquery.waypoints.js") 
+    script(src="assets/scripts/_swiper.js")
     script(src="assets/scripts/main.js")

@@ -21,13 +21,13 @@
       background-clip: text;
       position: absolute;
       width: 100%;
-      font-size: 34px;
+      font-size: 50px;
       line-height: 60px;
       @include proxima(black);
     }
     &:after {
       content: "Готовые решения на Вашей кухне";
-      font-size: 34px;
+      font-size: 50px;
       line-height: 60px;
       text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
       color: transparent;
@@ -40,6 +40,7 @@
     line-height: 25px;
     text-align: center;
     margin-bottom: 50px;
+    @include circe(regular);
   }
   &__item {
     display: inline-block;
@@ -63,9 +64,10 @@
     font-size: 20px;
     line-height: 30px;
     position: absolute;
+    @include circe(regular);
     &_1 {
       right: -171px;
-      bottom: 143px;
+      bottom: 32px;
     }
     &_2 {
       top: 164px;

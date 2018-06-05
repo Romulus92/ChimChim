@@ -11,13 +11,13 @@
       background-clip: text;
       position: absolute;
       width: 100%;
-      font-size: 34px;
+      font-size: 50px;
       line-height: 60px;
       @include proxima(black);
     }
     &:after {
       content: "Вместе с ЧИМ-ЧИМ –";
-      font-size: 34px;
+      font-size: 50px;
       line-height: 60px;
       text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
       color: transparent;
@@ -36,13 +36,13 @@
       background-clip: text;
       position: absolute;
       width: 100%;
-      font-size: 34px;
+      font-size: 50px;
       line-height: 60px;
       @include proxima(black);
     }
     &:after {
       content: "готовить одно удовольствие!";
-      font-size: 34px;
+      font-size: 50px;
       line-height: 60px;
       text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
       color: transparent;
@@ -75,6 +75,7 @@
       left: 166px;
       bottom: -25px;
       color: #898989;
+      @include circe(bold);
     }
   }
   &__list {
@@ -100,11 +101,14 @@
       font-size: 20px;
       line-height: 28px;
       color: #d91c29;
+      @include circe(bold);
     }
     &-text {
       color: #898989;
       font-size: 15px;
       line-height: 25px;
+      @include circe(regular);
     }
   }  
 }
+
