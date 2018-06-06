@@ -5,7 +5,9 @@
     max-width: 720px;
     margin: 0;
     display: flex;
-    justify-content: center;
+    @include phones {
+      justify-content: center;
+    }
     div {
       background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
       color:transparent;
@@ -42,9 +44,9 @@
     max-width: 720px;
     margin-bottom: 55px;
     display: flex;
-    justify-content: center;
     @include phones {
       margin-bottom: 0;
+      justify-content: center;
     }
     div {
       background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */

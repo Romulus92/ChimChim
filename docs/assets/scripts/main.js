@@ -254,6 +254,22 @@ var func = {
         dragSize: 30
       },
     })
+  },
+  "swiperSliderMob": function() {
+    var swiper = new Swiper('.swiper-mobile', {
+      // Optional parameters
+      direction: 'horizontal',
+      /* loop: true, */
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-mobile__counter',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-mobile__right',
+        prevEl: '.swiper-mobile__left',
+      },
+    });
   }
 }
 
@@ -267,6 +283,7 @@ var app = {
     func.sliderMenuHover();
     func.sliderMenuClick();
     func.swiperSlider();
+    func.swiperSliderMob();
   },
   'scroll': function() {
     

@@ -12,6 +12,11 @@
     @include notebooks {
       width: 980px;
     }
+    @include phones {
+      width: 284px;
+      flex-direction: column;
+      border-bottom: none;
+    }
     &-item {
       width: 33.3%;
       height: 93px;
@@ -29,6 +34,10 @@
       background: transparent;
       position: relative;
       z-index: 2;
+      @include phones {
+        width: 100%;
+        border-bottom: none;
+      }
       /* &:hover {
         border: none;
         .slider__menu-item-text {
@@ -37,6 +46,10 @@
       } */
       &:last-of-type {
         width: 33.4%;
+        @include phones {
+          width: 100%;
+          border-bottom: 1px solid #a3a3a3;
+        }
       }
       &-bg {
         position: absolute;
@@ -93,6 +106,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 55px;
+    @include phones {
+      display: none;
+    }
     &-text {
       @include circe(regular);
       font-size: 15px;
@@ -117,6 +133,9 @@
         padding-top: 100px;
         width: 665px;
       }
+      @include phones {
+        width: 350px;
+      }
       &-image {
         width: 100%;
       }
@@ -136,6 +155,10 @@
         font-size: 50px;
         line-height: 60px;
         @include proxima(black);
+        @include phones {
+          font-size: 29px;
+          line-height: 35px;
+        }
       }
       &:after {
         content: "Пшеничная";
@@ -144,6 +167,10 @@
         text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
         color: transparent;
         @include proxima(black);
+        @include phones {
+          font-size: 29px;
+          line-height: 35px;
+        }
       }
     }
     &-heading2 {
@@ -157,6 +184,10 @@
         font-size: 50px;
         line-height: 60px;
         @include proxima(black);
+        @include phones {
+          font-size: 29px;
+          line-height: 35px;
+        }
       }
       &:after {
         content: "лапша";
@@ -165,6 +196,10 @@
         text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
         color: transparent;
         @include proxima(black);
+        @include phones {
+          font-size: 29px;
+          line-height: 35px;
+        }
       }
     }
     &-heading3 {
@@ -178,6 +213,10 @@
         font-size: 50px;
         line-height: 60px;
         @include proxima(black);
+        @include phones {
+          font-size: 29px;
+          line-height: 35px;
+        }
       }
       &:after {
         content: "со свининой";
@@ -186,6 +225,10 @@
         text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
         color: transparent;
         @include proxima(black);
+        @include phones {
+          font-size: 29px;
+          line-height: 35px;
+        }
       }
     }
     &-heading4 {
@@ -200,6 +243,10 @@
         font-size: 50px;
         line-height: 60px;
         @include proxima(black);
+        @include phones {
+          font-size: 29px;
+          line-height: 35px;
+        }
       }
       &:after {
         content: "Яки Удон";
@@ -208,6 +255,10 @@
         text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
         color: transparent;
         @include proxima(black);
+        @include phones {
+          font-size: 29px;
+          line-height: 35px;
+        }
       }
     }
     &-content {
@@ -216,6 +267,9 @@
     &-header {
       padding-top: 130px;
       min-width: 310px;
+      @include phones {
+        padding-top: 35px;
+      }
     }
     
     &-image {
@@ -255,6 +309,9 @@
     display: flex;
     margin-bottom: 47px;
     justify-content: space-between;
+    @include phones {
+      display: none;
+    }
     &-item {
       padding-top: 12px;
       height: 227px;
@@ -283,6 +340,9 @@
   }
   &__wrap {
     /* padding-left: 35px; */
+    @include phones {
+      display: none;
+    }
   }
   /* &__scrollbar {
 
@@ -320,4 +380,130 @@
   width: 30px;
   height: 30px;
   position: absolute;
+}
+
+.swiper-mobile {
+  display: none;
+  @include phones {
+    display: block;
+  }
+  &__heading_1 {
+    div {
+      background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      position: absolute;
+      width: 100%;
+      font-size: 50px;
+      line-height: 60px;
+      @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+      }
+    }
+    &:after {
+      content: "Пшеничная лапша";
+      font-size: 50px;
+      line-height: 60px;
+      text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+      color: transparent;
+      @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+      }
+    }
+  }
+  &__heading_2 {
+    div {
+      background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      position: absolute;
+      width: 100%;
+      font-size: 50px;
+      line-height: 60px;
+      @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+      }
+    }
+    &:after {
+      content: "со свининой";
+      font-size: 50px;
+      line-height: 60px;
+      text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+      color: transparent;
+      @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+      }
+    }
+  }
+  &__heading_3 {
+    div {
+      background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      position: absolute;
+      width: 100%;
+      font-size: 50px;
+      line-height: 60px;
+      @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+      }
+    }
+    &:after {
+      content: "Яки Удон";
+      font-size: 50px;
+      line-height: 60px;
+      text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+      color: transparent;
+      @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+      }
+    }
+  }
+  &__header {
+    margin-left: 6px;
+  }
+  &__picture {
+    width: 360px;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  &__pagination {
+    display: flex;
+    width: 230px;
+  }
+  &__arrow {
+    &-left, &-right {
+      width: 53px;
+      height: 53px;
+    }
+  }
+}
+
+.swiper-mobile__item {
+  .slider__item-recipe-text {
+    width: 230px;
+    span {
+      width: 100%;
+    }
+    hr {
+      width: 100%;
+    }
+  }
 }

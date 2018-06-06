@@ -56,15 +56,18 @@ a {
   @include notebooks {
     max-width: rem(980px);
   }
-  @include phones {
-    max-width: 320px;
-  }
   &__header {
     flex-direction: row;
     justify-content: space-between;
   }
   &__advantages {
     overflow: visible;
+  }
+  &__ready {
+    overflow: visible;
+  }
+  @include phones {
+    max-width: 320px;
   }
   &__slider {
     overflow: visible;
@@ -73,9 +76,10 @@ a {
     @include notebooks {
       max-width: 980px;
     }
-  }
-  &__ready {
-    overflow: visible;
+    @include phones {
+      overflow: hidden;
+      max-width: 360px;
+    }
   }
 }
 
