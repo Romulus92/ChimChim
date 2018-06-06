@@ -81,12 +81,25 @@ var func = {
       startProgressbar();
       
       $('.product-slider').on('beforeChange', function(slick, currentSlide){
+        var windowSize = $(window).width();
         if ($('.slick-slide.slick-current.slick-active').attr('data-slick-index') == 0){
-          $(".hero_bg").css("background", "url(assets/images/header_bg/hotasia.jpg) center center no-repeat").fadeIn()
+          if (windowSize <= 480) {
+            $(".hero_bg").css("background", "url(assets/images/header_bg/hotasia_mob.jpg) center center no-repeat").fadeIn()
+          } else {
+            $(".hero_bg").css("background", "url(assets/images/header_bg/hotasia.jpg) center center no-repeat").fadeIn()
+          } 
         } else if ($('.slick-slide.slick-current.slick-active').attr('data-slick-index') == 1) {
-          $(".hero_bg").css("background", "url(assets/images/header_bg/korean.jpg) center center no-repeat").fadeIn()
+          if (windowSize <= 480) {
+            $(".hero_bg").css("background", "url(assets/images/header_bg/korean_mob.jpg) center center no-repeat").fadeIn()
+          } else {
+            $(".hero_bg").css("background", "url(assets/images/header_bg/korean.jpg) center center no-repeat").fadeIn()
+          }
         } else if ($('.slick-slide.slick-current.slick-active').attr('data-slick-index') == 2) {
-          $(".hero_bg").css("background", "url(assets/images/header_bg/professional.jpg) center center no-repeat").fadeIn()
+          if (windowSize <= 480) {
+            $(".hero_bg").css("background", "url(assets/images/header_bg/professional_mob.jpg) center center no-repeat").fadeIn()
+          } else {
+            $(".hero_bg").css("background", "url(assets/images/header_bg/professional.jpg) center center no-repeat").fadeIn()
+          }
         }
       });
       
@@ -105,6 +118,21 @@ var func = {
         startProgressbar();
       })
     });
+    $(".slider__wrap").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      centerMode: true,
+      centerPadding: 100
+    });
+    $(".slider__preview-item").click(function(e){
+      e.preventDefault();
+      var notClicked = $(".slider__preview-item").not(this)
+      $(notClicked).removeClass("slider__preview-item_active")
+      $(this).addClass("slider__preview-item_active")
+      var index = $(".slider__preview-item").index(this)
+      $(".slider__wrap").slick('slickGoTo', index)
+    })
   },
   "headerHover": function() {
     $(".nav__item").hover(function() {

@@ -14,6 +14,10 @@
     text-align: center;
     margin-bottom: 0;
     margin-top: 115px;
+    @include phones {
+      margin-top: 70px;
+      margin-bottom: 21px;
+    }
     div {
       background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
       color:transparent;
@@ -24,6 +28,10 @@
       font-size: 50px;
       line-height: 60px;
       @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+      }
     }
     &:after {
       content: "Готовые решения на Вашей кухне";
@@ -32,6 +40,10 @@
       text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
       color: transparent;
       @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+      }
     }
   }
   &__lead {
@@ -41,6 +53,9 @@
     text-align: center;
     margin-bottom: 50px;
     @include circe(regular);
+    @include phones {
+      line-height: 20px;
+    }
   }
   &__item {
     display: inline-block;
@@ -50,14 +65,42 @@
     }
     &_1 {
       width: 286px;
+      @include phones {
+        .ready__image {
+          width: 126px;
+        }
+      }
     }
     &_2 {
       width: 615px;
+      @include notebooks {
+        width: 550px;
+        @include phones {
+          .ready__image {
+            height: 330px;
+            width: 485px;
+            margin-left: 145px;
+            margin-top: -60px;
+          }
+        }
+      }
     }
     &_3 {
       width: 860px;
       margin: 0 auto;
       opacity: 0;
+      @include notebooks {
+        width: 775px;
+      }
+      @include phones {
+        .ready__image {
+          transform: rotate(25deg);
+          height: 290px;
+          width: 445px;
+          margin-left: -125px;
+          margin-top: -45px;
+        }
+      }
     }
   }
   &__text {
@@ -68,14 +111,30 @@
     &_1 {
       right: -171px;
       bottom: 32px;
+      @include phones {
+        right: -54px;
+        bottom: 25px;    
+      }
     }
     &_2 {
       top: 164px;
       right: -48px;
+      @include phones {
+        right: 0;
+        left: 0;
+        width: 155px;
+        top: 65px;
+      }
     }
     &_3 {
       top: 171px;
       right: 0;
+      width: 180px;
+      @include phones {
+        width: 121px;
+        top: 25px;
+        right: 28px;
+      }
     }
   }
   &__image {
@@ -84,15 +143,42 @@
   &__line {
     position: absolute;
     opacity: 0;
+    @include phones {
+      display: none;
+    }
     &_1 {
+      opacity: 0;
       width: 333px;
       right: -311px;
       top: 302px;
+      @include phones {
+        display: none;
+      }
     }
     &_2 {
+      opacity: 0;
       width: 148px;
       left: 92px;
       bottom: -197px;
+      @include phones {
+        display: none;
+      }
+    }
+    &_3 {
+      display: none;
+      @include phones {
+        display: block;
+        left: 131px;
+        top: 135px;
+      }
+    }
+    &_4 {
+      display: none;
+      @include phones {
+        display: block;
+        top: 157px;
+        left: 120px;
+      }
     }
   }
 }

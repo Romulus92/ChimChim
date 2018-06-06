@@ -1,11 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 172 170.7" style="enable-background:new 0 0 172 170.7;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#637583;stroke-miterlimit:10;stroke-dasharray:6,8;}
-</style>
-<g>
-	<path class="st0" d="M6.6,158.3c78.5-23.7,139.4-76.2,161-146"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="57.594" height="80.5" viewBox="0 0 57.594 80.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #a1a1a1;
+        stroke-width: 1px;
+        stroke-dasharray: 6 8;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Фигура_18_копия" data-name="Фигура 18 копия" class="cls-1" d="M153.992,1223.99c0.513-25.43,23.055-61.47,56.133-79.49" transform="translate(-153.5 -1144)"/>
 </svg>

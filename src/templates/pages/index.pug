@@ -81,7 +81,7 @@ html(lang="en")
             a.product__progress-item.product__progress-item-3
               .product__progress-bar
     section.ready
-      .container
+      .container.container__ready
         h2.ready__heading 
           div Готовые решения на Вашей кухне
         span.ready__lead Свыше 20 вкусных дополнений к вашему столу
@@ -91,15 +91,17 @@ html(lang="en")
               img.ready__image(src='assets/images/vegies-tai.png')
               .ready__text.ready__text_1 Удобные упаковки <br /> с подробной <br /> инструкцией
             img.ready__line.ready__line_1.ready__animated.animated(src='assets/images/lines1.svg')
+            img.ready__line.ready__line_3.ready__animated.animated(src='assets/images/lines3.svg')
           .ready__item.ready__item_2
             .ready__item_info.ready__animated.animated
               img.ready__image(src='assets/images/pan.png')
               .ready__text.ready__text_2 Время приготовления — <br /> до 30 минут
             img.ready__line.ready__line_2.ready__animated.animated(src='assets/images/lines2.svg')
+            img.ready__line.ready__line_4.ready__animated.animated(src='assets/images/lines4.svg')
           .ready__item.ready__item_3.ready__animated.animated
             img.ready__image(src='assets/images/plate.png')
-            .ready__text.ready__text_3 Неповторимый вкус <br /> каждого блюда  
-    section.section.advantages
+            .ready__text.ready__text_3 Неповторимый вкус каждого блюда  
+    section.advantages
       .container.container__advantages
         h2.advantages__heading.advantages__heading_1
           div Вместе с ЧИМ-ЧИМ –
@@ -134,35 +136,161 @@ html(lang="en")
           a.slider__menu-item.slider__menu-item_prof
             span.slider__menu-item-text Professional
             .slider__menu-item-bg
-        .slider__item
-          .slider__item-lead
-            img.slider__item-lead-quote_left(src="assets/images/quote_left.png")
-            span.slider__item-lead-text Азиатские соусы для приготовления блюд паназиатской кухни сочетают в себе сразу 3 вкуса: острота, кислота и сладость. Чим-Чим представляет линейку готовых решений для самых популярных блюд из Азии.
-            img.slider__item-lead-quote_right(src="assets/images/quote_right.png")
-          .slider__item-content
-            .slider__item-header
-              h2.slider__item-heading.slider__item-heading1
-                div Пшеничная
-              h2.slider__item-heading.slider__item-heading2
-                div лапша
-              h2.slider__item-heading.slider__item-heading3
-                div со свининой
-              h2.slider__item-heading.slider__item-heading4
-                div Яки Удон
-              .slider__item-video
-                .slider__item-image
-                  img.slider__item-video-icon(src="assets/images/play.png")
-                .slider__item-video-text
-                  span Видеорецепт
-                  hr
-              .slider__item-recipe
-                .slider__item-image
-                  img.slider__item-recipe-icon(src="assets/images/recipe.png")
-                .slider__item-recipe-text
-                  span Описание рецепта
-                  hr
-            .slider__item-picture
-              img.slider__item-picture-image(src="assets/images/slider_item.png")
+        .slider__lead
+          img.slider__lead-quote_left(src="assets/images/quote_left.png")
+          span.slider__lead-text Азиатские соусы для приготовления блюд паназиатской кухни сочетают в себе сразу 3 вкуса: острота, кислота и сладость. Чим-Чим представляет линейку готовых решений для самых популярных блюд из Азии.
+          img.slider__lead-quote_right(src="assets/images/quote_right.png")
+        .slider__wrap
+          .slider__item.slider__item_1
+            .slider__item-content
+              .slider__item-header
+                h2.slider__item-heading.slider__item-heading1
+                  div Пшеничная
+                h2.slider__item-heading.slider__item-heading2
+                  div лапша
+                h2.slider__item-heading.slider__item-heading3
+                  div со свининой
+                h2.slider__item-heading.slider__item-heading4
+                  div Яки Удон
+                .slider__item-video
+                  .slider__item-image
+                    img.slider__item-video-icon(src="assets/images/play.png")
+                  .slider__item-video-text
+                    span Видеорецепт
+                    hr
+                .slider__item-recipe
+                  .slider__item-image
+                    img.slider__item-recipe-icon(src="assets/images/recipe.png")
+                  .slider__item-recipe-text
+                    span Описание рецепта
+                    hr
+              .slider__item-picture
+                img.slider__item-picture-image(src="assets/images/slider_item.png")
+          .slider__item.slider__item_2
+            .slider__item-content
+              .slider__item-header
+                h2.slider__item-heading.slider__item-heading1
+                  div Пшеничная
+                h2.slider__item-heading.slider__item-heading2
+                  div лапша
+                h2.slider__item-heading.slider__item-heading3
+                  div со свининой
+                h2.slider__item-heading.slider__item-heading4
+                  div Яки Удон
+                .slider__item-video
+                  .slider__item-image
+                    img.slider__item-video-icon(src="assets/images/play.png")
+                  .slider__item-video-text
+                    span Видеорецепт
+                    hr
+                .slider__item-recipe
+                  .slider__item-image
+                    img.slider__item-recipe-icon(src="assets/images/recipe.png")
+                  .slider__item-recipe-text
+                    span Описание рецепта
+                    hr
+              .slider__item-picture
+                img.slider__item-picture-image(src="assets/images/slider_item.png")
+          .slider__item.slider__item_3
+            .slider__item-content
+              .slider__item-header
+                h2.slider__item-heading.slider__item-heading1
+                  div Пшеничная
+                h2.slider__item-heading.slider__item-heading2
+                  div лапша
+                h2.slider__item-heading.slider__item-heading3
+                  div со свининой
+                h2.slider__item-heading.slider__item-heading4
+                  div Яки Удон
+                .slider__item-video
+                  .slider__item-image
+                    img.slider__item-video-icon(src="assets/images/play.png")
+                  .slider__item-video-text
+                    span Видеорецепт
+                    hr
+                .slider__item-recipe
+                  .slider__item-image
+                    img.slider__item-recipe-icon(src="assets/images/recipe.png")
+                  .slider__item-recipe-text
+                    span Описание рецепта
+                    hr
+              .slider__item-picture
+                img.slider__item-picture-image(src="assets/images/slider_item.png")
+          .slider__item.slider__item_4
+            .slider__item-content
+              .slider__item-header
+                h2.slider__item-heading.slider__item-heading1
+                  div Пшеничная
+                h2.slider__item-heading.slider__item-heading2
+                  div лапша
+                h2.slider__item-heading.slider__item-heading3
+                  div со свининой
+                h2.slider__item-heading.slider__item-heading4
+                  div Яки Удон
+                .slider__item-video
+                  .slider__item-image
+                    img.slider__item-video-icon(src="assets/images/play.png")
+                  .slider__item-video-text
+                    span Видеорецепт
+                    hr
+                .slider__item-recipe
+                  .slider__item-image
+                    img.slider__item-recipe-icon(src="assets/images/recipe.png")
+                  .slider__item-recipe-text
+                    span Описание рецепта
+                    hr
+              .slider__item-picture
+                img.slider__item-picture-image(src="assets/images/slider_item.png")
+          .slider__item.slider__item_5
+            .slider__item-content
+              .slider__item-header
+                h2.slider__item-heading.slider__item-heading1
+                  div Пшеничная
+                h2.slider__item-heading.slider__item-heading2
+                  div лапша
+                h2.slider__item-heading.slider__item-heading3
+                  div со свининой
+                h2.slider__item-heading.slider__item-heading4
+                  div Яки Удон
+                .slider__item-video
+                  .slider__item-image
+                    img.slider__item-video-icon(src="assets/images/play.png")
+                  .slider__item-video-text
+                    span Видеорецепт
+                    hr
+                .slider__item-recipe
+                  .slider__item-image
+                    img.slider__item-recipe-icon(src="assets/images/recipe.png")
+                  .slider__item-recipe-text
+                    span Описание рецепта
+                    hr
+              .slider__item-picture
+                img.slider__item-picture-image(src="assets/images/slider_item.png")
+          .slider__item.slider__item_6
+            .slider__item-content
+              .slider__item-header
+                h2.slider__item-heading.slider__item-heading1
+                  div Пшеничная
+                h2.slider__item-heading.slider__item-heading2
+                  div лапша
+                h2.slider__item-heading.slider__item-heading3
+                  div со свининой
+                h2.slider__item-heading.slider__item-heading4
+                  div Яки Удон
+                .slider__item-video
+                  .slider__item-image
+                    img.slider__item-video-icon(src="assets/images/play.png")
+                  .slider__item-video-text
+                    span Видеорецепт
+                    hr
+                .slider__item-recipe
+                  .slider__item-image
+                    img.slider__item-recipe-icon(src="assets/images/recipe.png")
+                  .slider__item-recipe-text
+                    span Описание рецепта
+                    hr
+              .slider__item-picture
+                img.slider__item-picture-image(src="assets/images/slider_item.png")
         .slider__preview
           .swiper-container
             .swiper-wrapper

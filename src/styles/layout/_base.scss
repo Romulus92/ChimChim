@@ -53,6 +53,12 @@ a {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  @include notebooks {
+    max-width: rem(980px);
+  }
+  @include phones {
+    max-width: 320px;
+  }
   &__header {
     flex-direction: row;
     justify-content: space-between;
@@ -61,6 +67,14 @@ a {
     overflow: visible;
   }
   &__slider {
+    overflow: visible;
+    max-width: 1244px;
+    width: 1244px;
+    @include notebooks {
+      max-width: 980px;
+    }
+  }
+  &__ready {
     overflow: visible;
   }
 }

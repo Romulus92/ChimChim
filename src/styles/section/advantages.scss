@@ -4,6 +4,8 @@
     position: relative;
     max-width: 720px;
     margin: 0;
+    display: flex;
+    justify-content: center;
     div {
       background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
       color:transparent;
@@ -14,6 +16,11 @@
       font-size: 50px;
       line-height: 60px;
       @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+        padding-left: 15px;
+      }
     }
     &:after {
       content: "Вместе с ЧИМ-ЧИМ –";
@@ -22,6 +29,11 @@
       text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
       color: transparent;
       @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+        padding-left: 15px;
+      }
     }
   }
   &__heading_2 {
@@ -29,6 +41,11 @@
     margin: 0;
     max-width: 720px;
     margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    @include phones {
+      margin-bottom: 0;
+    }
     div {
       background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
       color:transparent;
@@ -39,6 +56,11 @@
       font-size: 50px;
       line-height: 60px;
       @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+        padding-left: 51px;  
+      }
     }
     &:after {
       content: "готовить одно удовольствие!";
@@ -47,6 +69,11 @@
       text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
       color: transparent;
       @include proxima(black);
+      @include phones {
+        font-size: 29px;
+        line-height: 35px;
+        padding-left: 51px; 
+      }
     }
   }
   &__content {
@@ -57,16 +84,27 @@
     flex-direction: column;
     width: 68%;
     padding-top: 55px;
+    @include phones {
+      padding-top: 45px;
+      width: 100%;
+    }
     &-header {
       display: flex;
       justify-content: center;
       position: relative;
       margin-bottom: 140px;
+      @include phones {
+        margin-bottom: 100px;
+      }
     }
     &-image {
       width: 600px;
       height: 166px;
       margin: 0 auto;
+      @include phones {
+        width: 305px;
+        height: 85px;
+      }
     }
     &-lead {
       font-size: 20px;
@@ -76,15 +114,25 @@
       bottom: -25px;
       color: #898989;
       @include circe(bold);
+      @include phones {
+        left: 42px;
+        bottom: -40px;
+      }
     }
   }
   &__list {
     display: flex;
+    @include phones {
+      flex-direction: column;
+    }
   }
   &__picture {
     width: 32%;
     position: relative;
     overflow: visible;
+    @include phones {
+      display: none;
+    }
   }
   &__image {
     position: absolute;
@@ -94,20 +142,36 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    @include phones {
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__item {
     max-width: 220px;
+    @include phones {
+      max-width: 250px;
+    }
     &-heading {
       font-size: 20px;
       line-height: 28px;
       color: #d91c29;
       @include circe(bold);
+      @include phones {
+        margin-top: 0;
+      }
     }
     &-text {
       color: #898989;
       font-size: 15px;
       line-height: 25px;
+      margin: 0;
       @include circe(regular);
+      @include phones {
+        margin-top: 0;
+        font-size: 18px;
+        margin-bottom: 95px;
+      }
     }
   }  
 }
