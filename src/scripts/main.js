@@ -270,6 +270,21 @@ var func = {
         prevEl: '.swiper-mobile__left',
       },
     });
+  },
+  "modifyHeader": function() {
+    $(document).ready(function() {
+      var topOfOthDiv = $(".ready").offset().top;
+      $(window).scroll(function() {
+          var windowSize = $(window).width();
+          if($(window).scrollTop() > topOfOthDiv && windowSize > 480 ) { //scrolled past the other div?
+              $(".header").hide(); //reached the desired point -- show div
+          } else if($(window).scrollTop() <= topOfOthDiv && windowSize > 480 ) {
+            $(".header").show();
+          } else if (windowSize <= 480 ) {
+            $(".header").hide();
+          }
+      });
+    })
   }
 }
 
@@ -284,6 +299,7 @@ var app = {
     func.sliderMenuClick();
     func.swiperSlider();
     func.swiperSliderMob();
+    func.modifyHeader();
   },
   'scroll': function() {
     

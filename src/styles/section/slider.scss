@@ -3,6 +3,10 @@
   min-height: 100%;
   background: url(../images/bcg.jpg);
   padding-bottom: 100px;
+  @include phones {
+    background: none;
+    padding-top: 40px;
+  }
   &__menu {
     display: flex;
     border-bottom: 1px solid #d91c29;
@@ -16,6 +20,7 @@
       width: 284px;
       flex-direction: column;
       border-bottom: none;
+      margin-bottom: 35px;
     }
     &-item {
       width: 33.3%;
@@ -285,6 +290,7 @@
       display: flex;
       align-items: center;
       &-text {
+        cursor: pointer;
         span {
           @include circe(bold);
           font-size: 18px;
@@ -388,6 +394,7 @@
     display: block;
   }
   &__heading_1 {
+    margin: 0;
     div {
       background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
       color:transparent;
@@ -401,6 +408,7 @@
       @include phones {
         font-size: 29px;
         line-height: 35px;
+        text-align: center;
       }
     }
     &:after {
@@ -413,10 +421,12 @@
       @include phones {
         font-size: 29px;
         line-height: 35px;
+        padding-left: 48px;
       }
     }
   }
   &__heading_2 {
+    margin: 0;
     div {
       background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
       color:transparent;
@@ -430,6 +440,7 @@
       @include phones {
         font-size: 29px;
         line-height: 35px;
+        text-align: center;
       }
     }
     &:after {
@@ -442,10 +453,12 @@
       @include phones {
         font-size: 29px;
         line-height: 35px;
+        padding-left: 96px;
       }
     }
   }
   &__heading_3 {
+    margin: 0;
     div {
       background-image: linear-gradient(to right, #764722, #ac8458); /* Standard syntax; must be last */
       color:transparent;
@@ -459,6 +472,7 @@
       @include phones {
         font-size: 29px;
         line-height: 35px;
+        text-align: center;
       }
     }
     &:after {
@@ -471,6 +485,7 @@
       @include phones {
         font-size: 29px;
         line-height: 35px;
+        padding-left: 115px;
       }
     }
   }
@@ -487,6 +502,7 @@
   &__pagination {
     display: flex;
     width: 230px;
+    margin: 0 auto;
   }
   &__arrow {
     &-left, &-right {
@@ -494,16 +510,50 @@
       height: 53px;
     }
   }
+  &__anchors {
+    width: 230px;
+    margin: 0 auto;
+  }
+  &__counter {
+    @include circe(bold);
+    font-size: 18px;
+    color: #838383;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .swiper-pagination-current {
+      font-size: 24px;
+      color: #d91c29;
+      margin-bottom: 3px;
+      margin-right: 8px;
+    }
+  }
 }
 
 .swiper-mobile__item {
   .slider__item-recipe-text {
-    width: 230px;
+    display: block;
     span {
       width: 100%;
+      font-size: 18px;  
     }
-    hr {
+    .slider__item-recipe-line {
+      background:url(../images/recipe_anchor_pic.png);
+      width: 150px;
+      height: 2px;
+    }
+  }
+  .slider__item-video-text {
+    display: block;
+    span {
       width: 100%;
+      font-size: 18px;
+       
+    }
+    .slider__item-video-line {
+      width: 107px;
+      height: 2px;
+      background:url(../images/video_anchor_pic.png);
     }
   }
 }
