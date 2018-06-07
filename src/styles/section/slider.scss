@@ -171,6 +171,7 @@
         line-height: 60px;
         text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
         color: transparent;
+        white-space: nowrap;
         @include proxima(black);
         @include phones {
           font-size: 29px;
@@ -200,6 +201,7 @@
         line-height: 60px;
         text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
         color: transparent;
+        white-space: nowrap;
         @include proxima(black);
         @include phones {
           font-size: 29px;
@@ -229,6 +231,7 @@
         line-height: 60px;
         text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
         color: transparent;
+        white-space: nowrap;
         @include proxima(black);
         @include phones {
           font-size: 29px;
@@ -259,6 +262,7 @@
         line-height: 60px;
         text-shadow: -5px 5px 10px rgba(0,0,0,0.2);
         color: transparent;
+        white-space: nowrap;
         @include proxima(black);
         @include phones {
           font-size: 29px;
@@ -341,6 +345,7 @@
         font-size: 18px;
         color: #838383;
         text-align: center;
+        max-width: 220px;
       }
     }
   }
